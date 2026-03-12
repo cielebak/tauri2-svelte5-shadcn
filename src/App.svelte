@@ -1,9 +1,3 @@
-<script lang="ts">
-	import HelloWorld from '$lib/components/HelloWorld.svelte';
-</script>
-
-<main
-	class="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-4 select-none"
->
-	<HelloWorld />
+<main class="flex min-h-screen items-center justify-center bg-white select-none">
+	<h1 class="text-4xl font-bold text-neutral-900">Tauri 2 + Svelte 5 + shadcn</h1>
 </main>

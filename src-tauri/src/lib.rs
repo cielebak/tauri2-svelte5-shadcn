@@ -1,6 +1,4 @@
-mod commands;
-use commands::default::{read, write};
-
+// Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #[allow(clippy::missing_panics_doc)]
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
@@ -15,7 +13,6 @@ pub fn run() {
             }
             Ok(())
         })
-        .invoke_handler(tauri::generate_handler![read, write])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
